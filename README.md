@@ -16,6 +16,8 @@ If you are interested, just make a PR or an issue if you find a bug or think abo
 
 ### Exemple:
 
+To know the attributes, just look the name here : [Stamplay NodeJs](https://github.com/Stamplay/stamplay-nodejs-sdk)
+
 ```javascript
 
 import {Observable} from 'rx'
@@ -57,9 +59,23 @@ document.body.appendChild(root)
 
 const drivers = {
   DOM: makeDOMDriver('#app'),
-  Stamplay: makeStamplayDriver('costs', 'd9970d823326250e6597f6715bb3d09d280bd9b009e16730c033beb9928c12bb')
+  Stamplay: makeStamplayDriver(your_api_name, your_api_key)
 };
 
 run(main, drivers);
 
+```
+
+#### Exemple for Query
+```javascript
+
+   const getuser$ = Observable.just({
+    type: 'Query',
+    object: 'costs',
+    query: [
+      {fn: 'greaterThan', attr:'price', value: 5},
+      {fn: 'equalTo', attr:'paid', value: true},
+      {fn: 'exec'}
+    ]
+  })
 ```

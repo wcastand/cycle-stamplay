@@ -37,7 +37,7 @@ document.body.appendChild(root)
 
 const drivers = {
   DOM: makeDOMDriver('#app'),
-  Stamplay: makeStamplayDriver('costs', 'd9970d823326250e6597f6715bb3d09d280bd9b009e16730c033beb9928c12bb')
+  Stamplay: makeStamplayDriver(YOU_API_NAME, YOU_API_KEY)
 };
 
 run(main, drivers);
