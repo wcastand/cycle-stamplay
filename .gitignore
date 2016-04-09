@@ -1,6 +1,4 @@
 node_modules
-dist
-lib
 *.log
 .vs_code
 .vscode
