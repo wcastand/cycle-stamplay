@@ -1,6 +1,6 @@
 {
   "name": "cycle-stamplay",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Cycle driver for stamplay",
   "main": "lib/bundle.js",
   "scripts": {
