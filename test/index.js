@@ -3,7 +3,7 @@ import {run} from '@cycle/core'
 import {makeDOMDriver, h} from '@cycle/dom'
 import path from 'path'
 
-import {makeStamplayDriver, GET, UPDATE, CREATE, DELETE} from '../lib/'
+import {makeStamplayDriver} from '../lib/'
 
 function main({DOM, Stamplay}) {
    const getuser$ = Observable.just({
